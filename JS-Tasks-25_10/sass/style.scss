@@ -1,0 +1,119 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e9c46a;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+header {
+    width: 100%;
+    background: #e76f51;
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 40px;
+    box-shadow: 0 10px 15px 5px #f4a261;
+    h1 {
+        padding-left: 10px;
+        cursor: pointer;
+        color: #e9c46a;
+        transition: 0.5s;
+        text-shadow: 3px -2px 0 #2a9d8f, 4px -3px 0#264653;
+        &:hover {
+            text-shadow: 3px -2px 0 #caffbf, 5px -3px 0#e63946;
+        }
+    }
+}
+
+main {
+    .row {
+        gap: 10px;
+    }
+    h2 {
+        padding-left: 10px;
+        cursor: pointer;
+        color: #e76f51;
+        transition: 0.5s;
+        text-shadow: 3px -2px 0 #2a9d8f, 4px -3px 0#264653;
+        &:hover {
+            text-shadow: 3px -2px 0 #caffbf, 5px -3px 0#e63946;
+        }
+    }
+    input {
+        outline: none;
+        border: none;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    button {
+        margin: 0 auto;
+        background: #2a9d8f;
+        padding: 10px;
+        border-radius: 10px;
+        border: none;
+        outline: none !important;
+        color: #f1faee;
+        outline: none;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover {
+            background: #1a665d;
+        }
+    }
+    .profit-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        margin: 50px 0;
+        .profit-card {
+            background: #f4a261;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.5s;
+            overflow: hidden;
+            &:hover {
+                box-shadow: 0 0 4px 1px #caffbf;
+            }
+            &:hover .title-box {
+                color: cornsilk;
+            }
+            .img-box {
+                object-fit: cover;
+                img {
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+            }
+            .title-box {
+                transition: 0.5s;
+                color: #264653;
+                padding: 10px;
+            }
+        }
+    }
+    .circle-container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px 0;
+        .circle {
+            color: black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: 0.5s;
+            &:hover {
+                box-shadow: 0 0 6px 7px #a8dadc;
+            }
+        }
+    }
+}
